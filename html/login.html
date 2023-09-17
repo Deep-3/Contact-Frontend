@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script defer src="/js/loginScript.js"></script>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+   
+    <div class="headerContainer">
+        <div class="header">WEB PHONE BOOK</div>
+    </div>
+    <div class="screen">
+        <div id="response"></div>
+        <div class="overlay">
+        
+            <form class="login">
+                <h1 class="loginHeading">Login</h1>
+                
+                <div class="emailDiv">
+                <label class="" for="email">Email</label>
+                <input type="text" placeholder="Enter Email Id" class="fields" id="mailEntry" required>
+                </div>
+                
+                <div class="passwordDiv">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" class="fields" id="passwordEntry" required>
+                <div class="showPassword">
+                    <input type="checkbox" onclick="passwordShowfunctionality()" class="passwordTypeIn"><div>Show Password</div>
+                </div>    
+                </div>
+                
+                <button type="submit" class="loginBtn">LOGIN</button>
+            </form>
+        </div>
+
+        <div class="accountPresent">Do not have an Account! <a href="../html/register.html">Create Account</a></div>
+
+        
+    </div>
+   
+</body>
+</html>

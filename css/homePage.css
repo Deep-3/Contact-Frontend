@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 10px;
+    font-size: 36px;
+    text-align: center;  
+}
+
+.logOut{
+    margin-right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.logOutMessage{
+    position: absolute;
+    font-size: 16px;
+    background-color: rgba(48, 48, 48, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    left:-66px;
+    top:13px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.logOut:hover .logOutMessage{
+    opacity: 1;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    height: 70px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.options-list{
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.getAllMessage,
+.getOneMessage,
+.createMessage,
+.updateMessage,
+.deleteMessage{
+    position: absolute;
+    font-size: 16px;
+    background-color: rgba(48, 48, 48, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    bottom: -40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.options-list:hover{
+    background-color: rgba(255, 255, 0, 0.541);
+}
+
+.options-list:hover .getAllMessage,
+.options-list:hover .getAllMessage,
+.options-list:hover .getOneMessage,
+.options-list:hover .createMessage,
+.options-list:hover .updateMessage,
+.options-list:hover .deleteMessage{
+    opacity: 1;
+}
+
+#getAllRecords{
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 30px;  
+   
+}
+
+table{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px; 
+}
+
+th{
+   padding: 20px;
+   background-color: rgb(235, 235, 117);
+}
+
+td{
+    padding: 20px;
+}
+
+@media (max-width:750px) {
+    table{
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px; 
+    }
+    
+    th{
+       padding: 5px;
+       background-color: rgb(235, 235, 117);
+    }
+    
+    td{
+        padding: 5px;
+    }
+}
+.record{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userHead,.emailHead,.phoneHead{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.username,.email,.phone{
+    border-left:1px solid yellow;
+    border-right:1px solid yellow;
+}
+
+.inputforSearch{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.searchId{
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.searchId::placeholder{
+    font-size: 20px;
+}
+
+.searchforSingleRecord{
+    width: 40px;
+    height:40px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: rgba(224, 224, 49, 0.712);
+    transition: all 0.3s ease;
+}
+
+#faultresponse{
+    color: red;
+    margin-top: 15px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.createNewContact,.updateContact,.DeleteContact,.searchContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newContact,#updateContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.nameDiv,.emailDiv,.phoneDiv,.idDiv{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fields{
+    width: 300px;
+    height: 30px;
+    border:none;
+    border-bottom: 1px solid black;    
+    
+}
+
+.fields::placeholder{
+    font-size: 15px;
+}
+
+.subject{
+    background-color: black;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(201, 201, 57);
+    text-align: center;
+    width: 100%;    
+}
+
+.createBtn,.deleteBtn,.updateBtn,.searchBtn{
+    padding: 10px 14px;
+    color: rgb(233, 233, 99);
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.createBtn:hover,.deleteBtn:hover,.updateBtn:hover,.searchBtn:hover{
+    box-shadow: 6px 6px;
+}
+
+
+.apiMessage{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.deleteDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}

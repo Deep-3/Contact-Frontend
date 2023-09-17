@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 0, 0.76);
+    box-shadow: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#response{
+    width: 290px;
+    text-align: center;
+    color: red;
+    margin-top: 100px;
+    font-size: 16px;
+} 
+.showPassword{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    
+    font-size: 14px;
+}
+
+.passwordTypeIn{
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.login{
+    border: 2px solid  rgb(202, 216, 3);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.login:hover{
+    box-shadow: 30px 30px;
+}
+.loginHeading{
+    margin-bottom: 20px;
+}
+
+.emailDiv,.passwordDiv{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.loginBtn{
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.664);
+    color: black;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.loginBtn:hover{
+    box-shadow: 10px 10px ;
+}
+
+
+
+.fields{
+    width: 300px;
+    margin-top: 4px;
+    border:1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.fields::placeholder{
+    font-size: 16px;
+}
+
+.loader{
+    top:70px;
+    position: absolute;
+    margin: auto;
+    border: 5px solid #363630;
+    border-radius: 50%;
+    border-top: 5px solid rgb(194, 192, 72);
+    width: 30px;
+    height: 30px;
+    animation: spinner 1s linear infinite;
+}
+
+.loading{
+    top:20px;
+    position: absolute;
+    font-size: 20px;
+    color: rgb(211, 211, 60);
+    font-weight: 500;
+    animation: loadingWritten 2s linear infinite; 
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes loadingWritten {
+    from {color: rgb(15, 15, 8);}
+    to {color: rgb(241, 241, 111);}
+  }
+
+@keyframes headerSpinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.accountPresent{
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+a:link{
+    text-decoration: none;
+    color: yellow;
+    
+}
+

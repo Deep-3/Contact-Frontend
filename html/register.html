@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <script defer src="/js/registerScript.js"></script>
+    <script src="https://kit.fontawesome.com/79c4b5d22e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="headerContainer">
+        <div class="header">WEB PHONE BOOK</div>
+    </div>
+    
+    <div class="screen">
+        <div id="response"></div>
+        <div class="overlay">
+            <form id="register">
+                <h1 class="registerHeading">REGISTER</h1>
+
+                <div class="usernameDiv"><label for="username">User Name</label>
+                <input type="text" placeholder="Enter your Name" class="fields" id="userNameEntry" required>
+                </div>   
+                
+                <div class="emailDiv">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email Id" class="fields" id="mailEntry" required>
+                </div>
+                
+                <div class="passwordDiv">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" class="fields" id="passwordEntry" required> 
+                <div class="showPassword">
+                    <input type="checkbox" onclick="passwordShowfunctionality()" class="passwordTypeIn"><div>Show Password</div>
+                </div>
+                </div>
+                
+                
+
+                <button type="submit" id="registerBtn" class="registerBtn">Register</button>
+            
+            </form>    
+        </div>
+
+        <div class="accountPresent">Already have an account? <a href="../html/login.html">Login</a></div>
+
+    </div>
+
+</body>
+</html>
