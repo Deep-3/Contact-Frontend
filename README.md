@@ -29,7 +29,6 @@ A web application that allows users to manage their contacts. This system enable
 ## Setup Instructions
 
 1. Clone the repository:
-2. 
    git clone https://github.com/yourusername/contact-management-system.git
    cd contact-management-system
    npm run dev
