@@ -27,7 +27,6 @@ function passwordShowfunctionality(){
 async function callLoginApi(loginData){
     
     try{
-        
         const response = await fetch('http://localhost:5001/api/user/login', 
         {
             method : 'POST',
@@ -37,6 +36,8 @@ async function callLoginApi(loginData){
             body: JSON.stringify(loginData)
         });
 
+        console.log(response)
+        console.log("fetch successfull");
         const responseStatus = response.status;
        
         if(isStatusBad(responseStatus) === true){
@@ -71,8 +72,8 @@ function loadHomePage(){
     <div class="loading"> Successfully Logged In <br>Taking you to our Homepage</div>`
     
     setTimeout(() => {
-        window.location.href = '../html/homepage.html'
-    },2000);
+        window.location.href = './../html/homepage.html'
+    },1000);
 }
 
 function isStatusBad(status){

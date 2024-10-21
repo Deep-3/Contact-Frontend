@@ -49,6 +49,7 @@ displaySingleReocrd.addEventListener('submit', (event) => {
     }
 })
 
+
 async function displayRecords(){
     const template = document.getElementsByClassName('hero')[0];
     template.innerHTML = ``;
@@ -377,14 +378,11 @@ function generateUpdateTemplate(){
     const template = document.getElementsByClassName('hero')[0];
     template.innerHTML = ` 
             <div class="updateContact">
-                <div class="subject">Add new Contact</div>
+                <div class="subject">Upadate Contact</div>
                 
                 <form id="updateContact">
 
-                        <div class="idDiv">
-                            <label for="name">Id</label>
-                            <input type="text" placeholder="Enter Contact Id" class="fields" id="idEntry" required>
-                        </div>
+                      
                         
                         <div class="nameDiv">
                             <label for="name">Name</label>
@@ -412,7 +410,7 @@ async function callUpdateContact(){
 
     console.log("hit");
     let contactData = collectContactData();
-    let id = document.getElementById('idEntry').value;
+    let id = document.getElementById('mailEntry').value;
     const accessToken = localStorage.getItem('accessToken');
     const response = await fetch(`http://localhost:5001/api/contact/updateContact/${id}`,
     {
@@ -448,8 +446,8 @@ function generateDeletetemplate(){
                 
                 <div class="deleteDiv">
                     <div class="idDiv">
-                    <label for="name">Id</label>
-                    <input type="text" placeholder="Enter Contact id" class="fields" id="idEntry" required>
+                    <label for="name">Phone no</label>
+                    <input type="text" placeholder=" Enter Contact Number" class="fields" id="idEntry" required>
                     </div>
 
                     <button type="submit" class="deleteBtn">DELETE</button>
